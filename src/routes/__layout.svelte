@@ -14,12 +14,12 @@
 	.appLayout {
 		display: grid;
 		grid-template-rows: 3rem 1fr;
-		width: 100%;
 		height: 100%;
-		background: #14213d;
-		color: white;
+		width: 100%;
 	}
 	main {
+		display: grid;
+		justify-content: center;
 		padding: 0rem 5rem;
 		overflow-y: scroll;
 	}
@@ -43,5 +43,11 @@
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
 		background: #555;
+	}
+
+	@media (max-width: 650px) {
+		main {
+			padding: 0rem 1rem;
+		}
 	}
 </style>

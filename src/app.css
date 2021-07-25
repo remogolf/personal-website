@@ -1,12 +1,10 @@
 /* Global Styles */
-:root {
-	font-size: 14px;
-}
-
 html,
 body {
 	height: 100%;
 	width: 100%;
+    background: #14213d;
+    color: white;
 }
 #svelte {
 	height: 100%;
@@ -48,10 +46,7 @@ button:hover {
     background: none;
     border: 1.5px solid aquamarine;
     border-radius: 0.5rem;
-    padding: 0.5rem;
     color: aquamarine;
-    margin-left: 0.5rem;
-    font-size: 1rem;
     transition: 0.3s ease-in;
 }
 

@@ -20,6 +20,9 @@
 		</li>
 	</ul>
 	<a rel="external" href="pdf/main.pdf" target="_blank" class="button">resume</a>
+    <div class="menu-btn">
+        <div class="menu-btn_lines"></div>
+    </div>
 </nav>
 
 <style>
@@ -31,7 +34,7 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-        font-size: 0.75rem;
+
 	}
 	nav:hover {
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -42,9 +45,54 @@
 		flex-direction: row;
 		justify-content: flex-end;
 		list-style: none;
-
 	}
 	li {
-		padding: 1rem 0.5rem;
+		padding: 0.5rem 0.5rem;
+	}
+    .button {
+        padding: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    .menu-btn {
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu-btn_lines,
+    .menu-btn_lines::before,
+    .menu-btn_lines::after{
+        width: 1.5rem;
+        height: 0.1rem;
+        background-color: aquamarine;
+        transform: all 0.5s ease-in-out;
+    }
+    .menu-btn_lines::before,
+    .menu-btn_lines::after{
+        content:'';
+        position:absolute;
+    }
+    .menu-btn_lines::before{
+        transform: translateY(-0.5rem)
+    }
+    .menu-btn_lines::after{
+        transform: translateY(0.5rem)
+    }
+
+	@media (max-width: 650px) {
+        .menu-btn {
+            display: flex;
+        }
+		.NavLinks {
+			display: none;
+		}
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
 	}
 </style>
