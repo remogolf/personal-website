@@ -1,0 +1,70 @@
+/* Global Styles */
+:root {
+	font-size: 14px;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+#svelte {
+	height: 100%;
+	width: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.445);
+}
+a:hover {
+	color: aquamarine;
+	transform: transltaeY(1rem);
+}
+
+button {
+	background: none;
+	border: 1.5px solid aquamarine;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	color: aquamarine;
+	margin-left: 0.5rem;
+	font-size: 1rem;
+    transition: 0.3s ease-in;
+}
+button:hover {
+    background:rgba(105, 209, 174, 0.26);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.button {
+    background: none;
+    border: 1.5px solid aquamarine;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: aquamarine;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    transition: 0.3s ease-in;
+}
+
+.button:hover {
+    background:rgba(105, 209, 174, 0.26);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.tags {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 0.5rem;
+    font-weight: 500;
+    color: grey;
+}
+
