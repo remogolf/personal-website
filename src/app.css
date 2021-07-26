@@ -15,6 +15,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
 }
 
 a {
@@ -54,12 +55,5 @@ button:hover {
     background:rgba(105, 209, 174, 0.26);
     transition: 0.3s ease-in;
     cursor: pointer;
-}
-
-.tags {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 0.6rem;
-    font-weight: 500;
-    color: grey;
 }
 

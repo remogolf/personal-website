@@ -1,19 +1,20 @@
 <script>
 	import '../app.css';
 	import Navbar from '$lib/Navbar.svelte';
+
+	let show=false;
+	console.log(show);
 </script>
 
 <div class="appLayout">
-	<Navbar />
-	<main>
+	<Navbar bing:sidebar_show={show}/>
+	<main class:backgroundBlur={show}>
 		<slot />
 	</main>
 </div>
 
 <style>
 	.appLayout {
-		display: grid;
-		grid-template-rows: 3rem 1fr;
 		height: 100%;
 		width: 100%;
 	}
@@ -22,7 +23,11 @@
 		justify-content: center;
 		padding: 0rem 5rem;
 		overflow-y: scroll;
+		
 	}
+	.backgroundBlur {
+		filter: blur(15px);
+	} 
 
 	/* width */
 	::-webkit-scrollbar {

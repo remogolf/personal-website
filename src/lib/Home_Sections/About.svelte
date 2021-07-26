@@ -1,19 +1,14 @@
 <div class="container">
-	<span class="tags">&lt h2 &gt</span>
 	<h2>About Me</h2>
-	<span class="tags">&lt /h2 &gt</span>
-
 	<div class="grid-container">
 		<div class="content">
-			<span class="tags">&lt p &gt</span>
+
 			<p>
 				Hello, my name is Remo Füeg and I freshly graduated from University with a Bachelor of Science in Mechanical Engineering. During my time studying I've discovered, that I enjoy to Code. I taught myself the fundamentals of programming using python, java and matlab. I am now on a mission to further develop my coding skills, which I believe to be useful alongside my BSc in mechanical engineering.
                 
                 Here are some of the technologies I have been working with:
 			</p>
-			<span class="tags">&lt /p &gt</span>
 			<br />
-			<span class="tags">&lt ul &gt</span>
 			<ul>
 				<li>Siemens NX</li>
 				<li>CATIA V5</li>
@@ -30,7 +25,6 @@
                 <li>Django</li>
                 <li>PostgrSQL</li>
             </ul>
-			<span class="tags">&lt /ul &gt</span>
 		</div>
 		<div class="profile-image-col">
 			<br />
@@ -93,18 +87,17 @@
 	}
 	p {
 		color: #e0fbfc;
-		padding-left: 1rem;
         font-size: 0.8rem;
 	}
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         list-style-type: none;
-        padding-left: 1rem;
         font-size: 0.8rem;;
     }
     li::before {
-        content: ">";
+        color: aquamarine;
+        content: "‣";
         padding-right: .5rem;
     }
 
