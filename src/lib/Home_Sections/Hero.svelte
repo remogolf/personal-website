@@ -6,12 +6,10 @@
     <span class="tags">&lt span &gt</span>
     <span class="greeting">Hi, my name is</span>
     <span class="tags">&lt /span &gt</span>
-    <br>
-	<span class="tags">&lt h1 &gt</span>
-    
-    <br />
-	<h1>
 
+	<span class="tags">&lt h1 &gt</span>
+
+	<h1>
 		Remo Füeg
 	</h1>
 	<span class="tags">&lt /h1 &gt</span>
@@ -23,14 +21,15 @@
 	<span class="tags">&lt /p &gt</span>
 	<br />
 	<span class="tags">&lt button &gt</span>
-    <br>
 	<a class="button" href="mailto:remogolf@gmail.com">Get In Touch</a>
-    <br>
-	<span class="tags">&lt /button &gt</span>
+    <span class="tags">&lt /button &gt</span>
+
 </div>
 
 <style>
     .container {
+        display:flex;
+        flex-direction: column;
         justify-content: flex-start;
     }
     p, .button, .greeting {
@@ -44,13 +43,13 @@
 	.button {
 		max-width: fit-content;
         padding: 0.5rem;
-        margin-top: 1rem;
-		margin: 1rem;
+        margin: .25rem 1rem;
 	}
 
 	.greeting {
 		font-weight: 100;
 		color: aquamarine;
+        padding-left: 1rem;
 	}
 	p {
 		color: #e0fbfc;

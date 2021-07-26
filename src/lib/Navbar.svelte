@@ -1,3 +1,7 @@
+<script>
+    import Sidebar from './Sidebar.svelte';
+    let sidebar_show = false;
+</script>
 <nav>
 	<ul class="NavLinks">
 		<li>
@@ -20,9 +24,10 @@
 		</li>
 	</ul>
 	<a rel="external" href="pdf/main.pdf" target="_blank" class="button">resume</a>
-    <div class="menu-btn">
+    <div on:click={() => sidebar_show = !sidebar_show} class="menu-btn">
         <div class="menu-btn_lines"></div>
     </div>
+    <Sidebar bind:show={sidebar_show} />
 </nav>
 
 <style>
@@ -50,18 +55,19 @@
 		padding: 0.5rem 0.5rem;
 	}
     .button {
-        padding: 0.5rem;
+        padding: 0.25rem;
         margin-left: 0.5rem;
     }
+
     .menu-btn {
+        width: 1.5rem;
+        height: 1.5rem;
         position: relative;
         display: none;
         justify-content: center;
         align-items: center;
-        width: 1.5rem;
-        height: 1.5rem;
         cursor: pointer;
-        z-index: 1;
+        z-index: 3;
     }
     .menu-btn_lines,
     .menu-btn_lines::before,
@@ -77,10 +83,12 @@
         position:absolute;
     }
     .menu-btn_lines::before{
-        transform: translateY(-0.5rem)
+        width: 1rem;
+        transform:translateY(-.5rem)
     }
     .menu-btn_lines::after{
-        transform: translateY(0.5rem)
+        width: 1.2rem;
+        transform: translateY(.5rem)
     }
 
 	@media (max-width: 650px) {
@@ -92,7 +100,15 @@
 		}
         nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            padding: 0rem 0.5rem;
+        }
+        .button {
+            display: none;
         }
 	}
 </style>
+
+
+
+
