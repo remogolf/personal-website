@@ -5,8 +5,8 @@
 	}
 </script>
 
-<div on:click={toggleSidebar} class="menu-btn">
-	<div class="menu-btn_lines" />
+<div class="menu-btn" class:open on:click={toggleSidebar}>
+	<div class="menu-btn_lines"/>
 </div>
 
 <style>
@@ -26,7 +26,7 @@
 		width: 1.5rem;
 		height: 0.1rem;
 		background-color: aquamarine;
-		transform: all 0.5s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 	.menu-btn_lines::before,
 	.menu-btn_lines::after {
@@ -41,6 +41,19 @@
 		width: 1.2rem;
 		transform: translateY(0.5rem);
 	}
+
+    .open .menu-btn_lines::before {
+        transform: rotate(45deg);
+        width: 1.5rem;
+
+    }
+    .open .menu-btn_lines::after {
+        transform: rotate(-45deg);
+        width: 1.5rem;
+    }
+    .open .menu-btn_lines {
+        background: transparent;
+    }
 
 	@media (max-width: 650px) {
 		.menu-btn {
