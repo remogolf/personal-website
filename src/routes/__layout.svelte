@@ -1,9 +1,7 @@
 <script>
 	import '../app.css';
 	import Navbar from '$lib/Navbar.svelte';
-
 	let show=false;
-	console.log(show);
 </script>
 
 <div class="appLayout">

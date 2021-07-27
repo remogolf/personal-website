@@ -1,14 +1,18 @@
 <script>
 	import Hero from '$lib/Home_Sections/Hero.svelte';
-    import About from '$lib/Home_Sections/About.svelte';
+	import About from '$lib/Home_Sections/About.svelte';
+    import SocialLinks from '$lib/SocialLinks.svelte';
+
 </script>
+
+<SocialLinks/>
 
 <section id="hero">
 	<Hero />
 </section>
 
 <section id="about">
-    <About/>
+	<About />
 </section>
 
 <section id="experience">
@@ -26,9 +30,9 @@
 <style>
 	section {
 		display: grid;
-        align-items: center;
+		align-items: center;
 		min-height: 100vh;
-        min-width: 0;
-        max-width: 800px;
+		min-width: 0;
+		max-width: 800px;
 	}
 </style>

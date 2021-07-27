@@ -16,23 +16,16 @@
 </div>
 
 <style>
-    * {
-        font-family: 'Roboto Mono', monospace;
-    }
     .container {
         display:flex;
         flex-direction: column;
         justify-content: flex-start;
     }
-    p, .button, .greeting {
+    .button, .greeting {
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1rem;
     }
-    h1 {
-        font-family: 'Roboto', sans-serif;
-		font-size: 5rem;
-        font-weight: 500;
-	}
+
 	.button {
 		max-width: fit-content;
         padding: 0.5rem;
@@ -42,15 +35,5 @@
 		font-weight: 400;
 		color: aquamarine;
 	}
-	p {
-		color: #e0fbfc;
-	}
-    @media (max-width: 650px) {
-        h1 {
-            font-size: 3.5rem;
-        }
-        p,.button,.greeting {
-            font-size: .8rem;
-        }
-	}
+
 </style>

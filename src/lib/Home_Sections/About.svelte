@@ -87,7 +87,6 @@
 	}
 	p {
 		color: #e0fbfc;
-        font-size: 0.8rem;
 	}
     ul {
         display: grid;
