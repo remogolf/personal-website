@@ -85,14 +85,12 @@
 		right: -7px;
 		transition: 0.3s ease;
 	}
-	p {
-		color: #e0fbfc;
-	}
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         list-style-type: none;
-        font-size: 0.8rem;;
+        font-size: 0.8rem;
+        color: #aaaaaa;
     }
     li::before {
         color: aquamarine;

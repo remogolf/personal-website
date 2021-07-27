@@ -35,11 +35,11 @@
         right:0;
 	}
 	.menu-btn_lines::before {
-		width: 2rem;
+		width: 1.5rem;
 		transform: translateY(-0.5rem);
 	}
 	.menu-btn_lines::after {
-		width: 1rem;
+		width: 1.5rem;
 		transform: translateY(0.5rem);
 	}
 

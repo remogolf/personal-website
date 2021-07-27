@@ -1,7 +1,6 @@
 <script>
 	import { slide } from 'svelte/transition';
 	export let show = false;
-
 	function toggleMenu() {
 		show = !show;
 	}
@@ -14,6 +13,7 @@
 			<li><a on:click={toggleMenu} rel="external" href="/#about">about</a></li>
 			<li><a on:click={toggleMenu} rel="external" href="/#experience">experience</a></li>
 			<li><a on:click={toggleMenu} rel="external" href="/#projects">projects</a></li>
+			<li><a on:click={toggleMenu} rel="external" href="/blog">blog</a></li>
 			<li><a on:click={toggleMenu} rel="external" href="/#contact">contact</a></li>
 			<li><a on:click={toggleMenu} rel="external" href="pdf/main.pdf" target="_blank" class="button">resume</a></li>
 		</ul>
@@ -41,8 +41,7 @@
 		height: 100vh;
 		padding: 3rem 1rem 0.6rem;
 		border-bottom: 1px solid #aaa;
-		background: #14213dfa;
-		backdrop-filter: blur(100px);
+		background: #14213d77;
 		z-index: 1;
 	}
 </style>

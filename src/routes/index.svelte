@@ -1,6 +1,7 @@
 <script>
 	import Hero from '$lib/Home_Sections/Hero.svelte';
 	import About from '$lib/Home_Sections/About.svelte';
+    import Experience from '$lib/Home_Sections/Experience.svelte'
     import SocialLinks from '$lib/SocialLinks.svelte';
 
 </script>
@@ -16,7 +17,7 @@
 </section>
 
 <section id="experience">
-	<h2>Work Experience</h2>
+	<Experience />
 </section>
 
 <section id="projects">
@@ -34,5 +35,6 @@
 		min-height: 100vh;
 		min-width: 0;
 		max-width: 800px;
+        padding-top: 3rem;
 	}
 </style>

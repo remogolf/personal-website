@@ -1,12 +1,12 @@
 <script>
 	import '../app.css';
 	import Navbar from '$lib/Navbar.svelte';
-	let show=false;
+	let backgroundBlur = false
 </script>
 
 <div class="appLayout">
-	<Navbar bing:sidebar_show={show}/>
-	<main class:backgroundBlur={show}>
+	<Navbar bind:sidebar_show={backgroundBlur}/>
+	<main class:blur={backgroundBlur}>
 		<slot />
 	</main>
 </div>
@@ -15,18 +15,16 @@
 	.appLayout {
 		height: 100%;
 		width: 100%;
+		overflow-y: scroll;
 	}
 	main {
 		display: grid;
 		justify-content: center;
 		padding: 0rem 5rem;
-		overflow-y: scroll;
-		
 	}
-	.backgroundBlur {
-		filter: blur(15px);
-	} 
-
+	.blur {
+		filter: blur(10px);
+	}
 	/* width */
 	::-webkit-scrollbar {
 		width: 5px;
