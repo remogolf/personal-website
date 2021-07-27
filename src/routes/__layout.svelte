@@ -13,39 +13,22 @@
 
 <style>
 	.appLayout {
+		display: grid;
+		grid-template-rows: 3rem 1fr;
+		grid-template-areas: 
+		'nav'
+		'main';
 		height: 100%;
 		width: 100%;
-		overflow-y: scroll;
 	}
 	main {
-		display: grid;
-		justify-content: center;
+		grid-area: main;
 		padding: 0rem 5rem;
+		overflow-y: scroll;
 	}
 	.blur {
 		filter: blur(10px);
 	}
-	/* width */
-	::-webkit-scrollbar {
-		width: 5px;
-	}
-
-	/* Track */
-	::-webkit-scrollbar-track {
-		background: #14213d;
-	}
-
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-		background: rgba(136, 136, 136, 0.459);
-		border-radius: 2px;
-	}
-
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-		background: #555;
-	}
-
 	@media (max-width: 650px) {
 		main {
 			padding: 0rem 1rem;

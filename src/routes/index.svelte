@@ -30,11 +30,10 @@
 
 <style>
 	section {
-		display: grid;
+		display: flex;
+        min-height: 100%;
+        margin: auto;
 		align-items: center;
-		min-height: 100vh;
-		min-width: 0;
 		max-width: 800px;
-        padding-top: 3rem;
 	}
 </style>

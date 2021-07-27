@@ -1,24 +1,23 @@
 /* Global Styles */
 
 :root {
- --background: #14213d;
- --primary: #E09F3E;
- --primary-highlight: #e09f3e9b;
- --secondary: #328CC1;
- --tertiary: #0B3C5D;
- --text-light: white;
- --text-light-secondary: #aaaaaa;
- --text-dark: black;
- --text-dark-secondary: rgb(36, 36, 36);
+	--background: #14213d;
+	--primary: #e09f3e;
+	--primary-highlight: #e09f3e3b;
+	--secondary: #328cc1;
+	--tertiary: #0b3c5d;
+	--text-light: white;
+	--text-light-secondary: #aaaaaa;
+	--text-dark: black;
+	--text-dark-secondary: rgb(36, 36, 36);
 }
-
 
 html,
 body {
 	height: 100%;
 	width: 100%;
-    background: var(--background);
-    color: white;
+	background: var(--background);
+	color: white;
 }
 #svelte {
 	height: 100%;
@@ -29,7 +28,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
+	font-weight: 400;
 }
 
 a {
@@ -49,51 +48,73 @@ button {
 	color: var(--primary);
 	margin-left: 0.5rem;
 	font-size: 1rem;
-    transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
 }
 button:hover {
-    background:var(--primary-highlight);
-    transition: 0.3s ease-in;
-    cursor: pointer;
+	background: var(--primary-highlight);
+	transition: 0.3s ease-in;
+	cursor: pointer;
 }
 
 .button {
-    background: none;
-    border: 1.5px solid var(--primary);
-    border-radius: 0.5rem;
-    color: var(--primary);
-    transition: 0.3s ease-in;
+	background: none;
+	border: 1.5px solid var(--primary);
+	border-radius: 0.5rem;
+	color: var(--primary);
+	transition: 0.3s ease-in;
 }
 
 .button:hover {
-    background:var(--primary-highlight);
-    transition: 0.3s ease-in;
-    cursor: pointer;
+	background: var(--primary-highlight);
+	transition: 0.3s ease-in;
+	cursor: pointer;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
 }
 
 h2 {
-    padding: 1rem 0rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+	padding: 1rem 0rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
 }
 
 p {
-    font-size: 1rem;
-    color: var(--text-light-secondary);
+	font-size: 1rem;
+	color: var(--text-light-secondary);
 }
 
 @media (max-width: 650px) {
-    h1 {
-        font-size: 3rem;
-    }
-    p {
-        font-size: 1rem;
-    }
+	h1 {
+		font-size: 3rem;
+	}
+	p {
+		font-size: 1rem;
+	}
 }
 
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #14213d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(136, 136, 136, 0.459);
+	border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

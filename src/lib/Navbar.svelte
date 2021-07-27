@@ -19,17 +19,16 @@
 
 <style>
 	nav {
+        grid-area: nav;
 		padding: 0 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-        height: 3rem;
-        position: fixed;
-        background: var(--background);
-        backdrop-filter: blur(20px);
         z-index: 2;
         transition: 0.3s ease-in;
+        display: flex;
+		flex-direction: row;
+        align-items: center;
+		justify-content: flex-end;
+		list-style: none;
+        background: transparent;
 	}
 	nav:hover {
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -37,7 +36,7 @@
 	}
 
 	.NavLinks {
-		display: flex;
+        display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
 		list-style: none;

@@ -4,11 +4,13 @@
     <div class="workplaceBlock">
     <div class="workplaceList">
     <ul class="companyList">
-        <li>
-            <button>Burckhardt Compression</button>
+        <li class="companyItem">
+            <input type="radio" class="tabs_radio" name="tabs-experience" id="tab-1" checked>
+            <label for="tab-1">Burckhardt Compression</label>
         </li>
-        <li>
-            <button>...</button>
+        <li class="companyItem">
+            <input type="radio" class="tabs_radio" name="tabs-experience" id="tab-2" checked>
+            <label for="tab-2">...</label>
         </li>
     </ul>
 </div>
@@ -31,15 +33,27 @@
 </div>
 
 <style>
-    button {
-        margin: 0;
-        border-radius: 0;
-        border: none;
-        border-left: 1px solid var(--primary);
-        height: 100%;
-        width: 100%;
+    label {
+        display:flex;
         text-align: left;
-        font-size: 0.8rem;
+        height:100%;
+        padding: 0.5rem;
+        border-left: 2px solid var(--text-light-secondary)
+    }   
+    label:hover {
+        cursor: pointer;
+        color:var(--primary);
+        
+
+    }
+    .tabs_radio:checked+label {
+        color: var(--primary);
+        background: var(--primary-highlight);
+        border-left: 2px solid var(--primary);
+        transition: 0.3s ease-in;
+    }
+    .tabs_radio {
+        display:none;
     }
     .container {
         display: flex;
@@ -93,6 +107,7 @@
             max-width: 10ch;
             display: flex;
             flex-direction: row;
+            height: 100%;
         }
         li {
             padding-right: 0.5rem;
