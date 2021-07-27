@@ -1,9 +1,23 @@
 /* Global Styles */
+
+:root {
+ --background: #14213d;
+ --primary: #ffd60a;
+ --primary-highlight: #d9b41083;
+ --secondary: #328CC1;
+ --tertiary: #0B3C5D;
+ --text-light: white;
+ --text-light-secondary: #aaaaaa;
+ --text-dark: black;
+ --text-dark-secondary: rgb(36, 36, 36);
+}
+
+
 html,
 body {
 	height: 100%;
 	width: 100%;
-    background: #14213d;
+    background: var(--background);
     color: white;
 }
 #svelte {
@@ -20,39 +34,39 @@ body {
 
 a {
 	text-decoration: none;
-	color: rgba(255, 255, 255, 0.445);
+	color: var(--text-light-secondary);
 }
 a:hover {
-	color: aquamarine;
+	color: var(--primary);
 	transform: transltaeY(1rem);
 }
 
 button {
 	background: none;
-	border: 1.5px solid aquamarine;
+	border: 1.5px solid var(--primary);
 	border-radius: 0.5rem;
 	padding: 0.5rem;
-	color: aquamarine;
+	color: var(--primary);
 	margin-left: 0.5rem;
 	font-size: 1rem;
     transition: 0.3s ease-in;
 }
 button:hover {
-    background:rgba(105, 209, 174, 0.26);
+    background:var(--primary-highlight);
     transition: 0.3s ease-in;
     cursor: pointer;
 }
 
 .button {
     background: none;
-    border: 1.5px solid aquamarine;
+    border: 1.5px solid var(--primary);
     border-radius: 0.5rem;
-    color: aquamarine;
+    color: var(--primary);
     transition: 0.3s ease-in;
 }
 
 .button:hover {
-    background:rgba(105, 209, 174, 0.26);
+    background:var(--primary-highlight);
     transition: 0.3s ease-in;
     cursor: pointer;
 }
@@ -71,7 +85,7 @@ h2 {
 
 p {
     font-size: 1rem;
-    color: #aaaaaa;
+    color: var(--text-light-secondary);
 }
 
 @media (max-width: 650px) {

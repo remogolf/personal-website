@@ -34,13 +34,12 @@
     button {
         margin: 0;
         border-radius: 0;
-        border-top: hidden;
-        border-bottom: hidden;
-        border-right: hidden;
+        border: none;
+        border-left: 1px solid var(--primary);
         height: 100%;
         width: 100%;
         text-align: left;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
     .container {
         display: flex;
@@ -71,8 +70,9 @@
     .taskItem::before {
         position: absolute;
         left: 0;
-        color: aquamarine;
-        content: "‣";
+        font-weight: bold;
+        color: var(--primary);
+        content: "⁙";
 
     }
     .date {
@@ -85,7 +85,7 @@
         font-size: 0.75rem;
     }
     span {
-        color: aquamarine;
+        color: var(--primary);
     }
 
     @media (max-width: 650px) {

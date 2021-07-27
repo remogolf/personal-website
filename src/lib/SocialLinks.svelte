@@ -67,17 +67,17 @@
 		padding: 1rem 0rem;
 	}
 	.icon {
-		fill: #e0fbfc;
+		fill: var(--text-light-secondary);
 	}
 	.icon:hover {
-		fill: aquamarine;
+		fill: var(--primary);
         cursor: pointer;
 	}
 	.line {
 		width: 0.1rem;
         height: 100%;
 		justify-self: stretch;
-		background-color: aquamarine;
+		background-color: var(--text-light-secondary);
 	}
 	.leftNav {
 		position: fixed;

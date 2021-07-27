@@ -25,7 +25,7 @@
 	.menu-btn_lines::after {
 		width: 1.5rem;
 		height: 0.15rem;
-		background-color: aquamarine;
+		background-color: var(--primary);
 		transition: all 0.3s ease-in-out;
 	}
 	.menu-btn_lines::before,

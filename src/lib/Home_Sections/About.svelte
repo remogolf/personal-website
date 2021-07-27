@@ -50,7 +50,7 @@
 		width: 100%;
         height: fit-content;
 		border-radius: 5px;
-		background: aquamarine;
+		background: var(--primary-highlight);
 		opacity: 1;
 		z-index: 1;
 	}
@@ -68,7 +68,7 @@
 	.image-container:after {
 		content: ' ';
 		background: transparent;
-		border: 2px solid aquamarine;
+		border: 2px solid var(--primary);
 		border-radius: 5px;
 		top: 10px;
 		left: 10px;
@@ -90,11 +90,12 @@
         grid-template-columns: 1fr 1fr;
         list-style-type: none;
         font-size: 0.8rem;
-        color: #aaaaaa;
+        color: var(--text-light-secondary);
     }
     li::before {
-        color: aquamarine;
-        content: "‣";
+        color: var(--primary);
+        font-size: 1.2rem;
+        content: "⁙";
         padding-right: .5rem;
     }
 

@@ -33,7 +33,7 @@
 
 	.greeting {
 		font-weight: 400;
-		color: aquamarine;
+		color: var(--primary);
 	}
 
 </style>
