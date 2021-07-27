@@ -15,7 +15,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="">
+			<a href="http://www.linkedin.com/in/remofueg">
 				<svg
 					class="icon"
 					xmlns="http://www.w3.org/2000/svg"

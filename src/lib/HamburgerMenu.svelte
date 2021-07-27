@@ -24,7 +24,7 @@
 	.menu-btn_lines::before,
 	.menu-btn_lines::after {
 		width: 1.5rem;
-		height: 0.1rem;
+		height: 0.15rem;
 		background-color: aquamarine;
 		transition: all 0.3s ease-in-out;
 	}
@@ -32,13 +32,14 @@
 	.menu-btn_lines::after {
 		content: '';
 		position: absolute;
+        right:0;
 	}
 	.menu-btn_lines::before {
-		width: 1rem;
+		width: 2rem;
 		transform: translateY(-0.5rem);
 	}
 	.menu-btn_lines::after {
-		width: 1.2rem;
+		width: 1rem;
 		transform: translateY(0.5rem);
 	}
 
