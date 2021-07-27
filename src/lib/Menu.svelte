@@ -40,8 +40,8 @@
 		width: 100%;
 		height: 100vh;
 		padding: 3rem 1rem 0.6rem;
-		border-bottom: 1px solid #aaa;
-		background: #14213d77;
+		border-bottom: 1px solid var(--primary-highlight);
+		background: transparent;
 		z-index: 1;
 	}
 </style>

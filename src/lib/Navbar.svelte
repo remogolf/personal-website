@@ -26,7 +26,7 @@
         width: 100%;
         height: 3rem;
         position: fixed;
-        background: #14213dda;
+        background: var(--background);
         backdrop-filter: blur(20px);
         z-index: 2;
         transition: 0.3s ease-in;
