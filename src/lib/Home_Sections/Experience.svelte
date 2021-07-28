@@ -68,6 +68,7 @@
     }
     .workplaceList {
         grid-area: workList;
+        font-size: 0.75rem;
     }
     .workplaceDescription {
         grid-area: workDescription;
@@ -78,6 +79,7 @@
     }
     .taskItem {
         position: relative;
+        font-size: 0.85rem;;
         padding-left: 1rem;
         margin-bottom:0.5rem;
     }
@@ -94,9 +96,6 @@
     }
     ul {
         list-style-type: none;
-    }
-    li {
-        font-size: 0.75rem;
     }
     span {
         color: var(--primary);

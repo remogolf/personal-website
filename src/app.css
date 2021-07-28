@@ -11,13 +11,12 @@
 	--text-dark: black;
 	--text-dark-secondary: rgb(36, 36, 36);
 }
-
 html,
 body {
 	height: 100%;
 	width: 100%;
 	background: var(--background);
-	color: white;
+	color: var(--text-light);
 }
 #svelte {
 	height: 100%;
@@ -39,7 +38,6 @@ a:hover {
 	color: var(--primary);
 	transform: transltaeY(1rem);
 }
-
 button {
 	background: none;
 	border: 1.5px solid var(--primary);
@@ -55,7 +53,6 @@ button:hover {
 	transition: 0.3s ease-in;
 	cursor: pointer;
 }
-
 .button {
 	background: none;
 	border: 1.5px solid var(--primary);
@@ -63,30 +60,29 @@ button:hover {
 	color: var(--primary);
 	transition: 0.3s ease-in;
 }
-
 .button:hover {
 	background: var(--primary-highlight);
 	transition: 0.3s ease-in;
 	cursor: pointer;
 }
-
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 4rem;
 	font-weight: 500;
 }
-
 h2 {
 	padding: 1rem 0rem;
 	font-family: 'Roboto', sans-serif;
-	font-size: 2rem;
+	font-size: 3rem;
 }
-
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+}
 p {
 	font-size: 1rem;
 	color: var(--text-light-secondary);
 }
-
 @media (max-width: 650px) {
 	h1 {
 		font-size: 3rem;
@@ -95,25 +91,20 @@ p {
 		font-size: 1rem;
 	}
 }
-
-/* Custom Scrollbar */
-
+/* Cus
 /* width */
 ::-webkit-scrollbar {
 	width: 5px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
 	background: #14213d;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: rgba(136, 136, 136, 0.459);
 	border-radius: 2px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;

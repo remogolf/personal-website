@@ -1,7 +1,7 @@
 <div class="leftNav">
 	<ul>
 		<li>
-			<a href="https://github.com/remogolf">
+			<a href="https://github.com/remogolf" target="_blank">
 				<svg
 					class="icon"
 					xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="http://www.linkedin.com/in/remofueg">
+			<a href="http://www.linkedin.com/in/remofueg" target="_blank">
 				<svg
 					class="icon"
 					xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@
 			</a>
 		</li>
         <li>
-			<a href="https://www.instagram.com/remogolf/">
+			<a href="https://www.instagram.com/remogolf/" target="_blank">
 				<svg
 					class="icon"
 					xmlns="http://www.w3.org/2000/svg"
