@@ -28,6 +28,9 @@
 
 	.button {
 		max-width: fit-content;
+        max-width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+        max-width: -moz-max-content;    /* Firefox/Gecko */
+        max-width: -webkit-max-content; /* Chrome */
         padding: 0.5rem;
 	}
 
