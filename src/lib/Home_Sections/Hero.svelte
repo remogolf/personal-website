@@ -7,11 +7,9 @@
 	<h1>
 		Remo Füeg
 	</h1>
-	<br />
 	<Typewriter cursor="white" interval={[50, 60, 80]}>
 		<p>Mechanical Engineer | Enthusiast Coder</p>
 	</Typewriter>
-	<br />
 	<a class="button" href="mailto:remogolf@gmail.com">Get In Touch</a>
 </div>
 
@@ -31,6 +29,7 @@
         max-width: intrinsic;           /* Safari/WebKit uses a non-standard name */
         max-width: -moz-max-content;    /* Firefox/Gecko */
         max-width: -webkit-max-content; /* Chrome */
+        margin-top: 2rem;
         padding: 0.5rem;
 	}
 
