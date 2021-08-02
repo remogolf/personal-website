@@ -1,21 +1,24 @@
+<script>
+ let experiences = ['Burckhardt Compression', '...'];
+ let activeExperience = 'Burckhardt Compression';
+
+</script>
+
 
 <div class="container">
     <h2>Work Experience</h2>
     <div class="workplaceBlock">
     <div class="workplaceList">
     <ul class="companyList">
-        <li class="companyItem">
-            <input type="radio" class="tabs_radio" name="tabs-experience" id="tab-1" checked>
-            <label for="tab-1">Burckhardt Compression</label>
+        {#each experiences as experience}
+        <li>
+            <div class="companyItem" class:active={experience === activeExperience}>{experience}</div>
         </li>
-        <li class="companyItem">
-            <input type="radio" class="tabs_radio" name="tabs-experience" id="tab-2" checked>
-            <label for="tab-2">...</label>
-        </li>
+        {/each}
     </ul>
 </div>
 <div class="workplaceDescription">
-    <h3>Intern <span>@ BCAG</span></h3>
+    <h3>Intern <span>@BCAG</span></h3>
     <p class="date">August 2019 - August 2020</p>
     <ul class="taskList">
         <li class="taskItem">
@@ -33,27 +36,14 @@
 </div>
 
 <style>
-    label {
-        display:flex;
-        text-align: left;
-        height:100%;
-        padding: 0.5rem;
-        border-left: 2px solid var(--text-light-secondary)
-    }   
-    label:hover {
-        cursor: pointer;
-        color:var(--primary);
-        
-
-    }
-    .tabs_radio:checked+label {
+    .active {
         color: var(--primary);
         background: var(--primary-highlight);
-        border-left: 2px solid var(--primary);
-        transition: 0.3s ease-in;
+        border-left: 2px solid var(--primary)
     }
-    .tabs_radio {
-        display:none;
+    .companyList{
+        display: flex;
+        flex-direction: column;
     }
     .container {
         display: flex;

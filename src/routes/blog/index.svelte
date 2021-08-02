@@ -30,7 +30,7 @@
 <div class="container">
 	<ul>
 		{#each posts as { path, metadata }}
-			<li>
+			<li class='postItem'>
 				<h1>
 					<a href={`/blog/${path.replace('.md', '').replace('.svx', '')}`}> {metadata.title}</a>
 				</h1>
@@ -52,6 +52,17 @@
     a {
         color: var(--text-light);
     }
+	.postItem {
+		background: var(--tertiary);
+		border-radius: 20px;
+		padding: 1rem;
+		margin-bottom: 3rem;
+		transition: 0.3s ease-in-out;
+	}
+	.postItem:hover{
+		background: var(--secondary);
+		transition: 0.3s ease-in-out;
+	}
     .postDetails {
         display: flex;
         list-style-type: none;

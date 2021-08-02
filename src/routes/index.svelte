@@ -1,9 +1,10 @@
 <script>
 	import Hero from '$lib/Home_Sections/Hero.svelte';
 	import About from '$lib/Home_Sections/About.svelte';
-    import Experience from '$lib/Home_Sections/Experience.svelte'
+    import Experience from '$lib/Home_Sections/Experience.svelte';
     import SocialLinks from '$lib/SocialLinks.svelte';
-
+	import Contact from '$lib/Home_Sections/Contact.svelte';
+	import Projects from '$lib/Home_Sections/Projects.svelte';
 </script>
 
 <SocialLinks/>
@@ -21,11 +22,11 @@
 </section>
 
 <section id="projects">
-	<h2>projects</h2>
+	<Projects />
 </section>
 
 <section id="contact">
-	<h2>contact</h2>
+	<Contact />
 </section>
 
 <style>

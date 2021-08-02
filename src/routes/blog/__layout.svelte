@@ -1,2 +1,7 @@
+<div class="container">
+    <slot/>
+</div>
 
-<slot/>
+<style>
+
+</style>
