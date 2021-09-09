@@ -3,12 +3,7 @@
 	<div class="grid-container">
 		<div class="content">
 			<p>
-				Hello, my name is Remo Füeg and I freshly graduated from University with a Bachelor of
-				Science in Mechanical Engineering. During my time studying I've discovered, that I enjoy to
-				Code. I taught myself the fundamentals of programming using python, java and matlab. I am
-				now on a mission to further develop my coding skills, which I believe to be useful alongside
-				my BSc in mechanical engineering. Here are some of the technologies I have been working
-				with:
+				Hello, my name is Remo Füeg and I freshly graduated from University with a Bachelor of Science in Mechanical Engineering. During my time studying I've discovered, that besides enjoying to design mechanical components using CAD, I also liked to Code. I taught myself the fundamentals of programming using python, java and matlab. I am now on a mission to further develop my coding skills, which I believe to be useful alongside my BSc in mechanical engineering. Here are some of the technologies I have been working with:
 			</p>
 			<br />
 			<ul>
