@@ -2,7 +2,7 @@
 
 <div class="container">
     <h2>Contact</h2>
-    <p>I am currently on the lookout for new opportunities and my inbox is always open.</p>
+    <p>I am currently not on the lookout for new opportunities but my inbox is always open.</p>
     <a class="button" href="mailto:remogolf@gmail.com">Get In Touch</a>
 </div>
 

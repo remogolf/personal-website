@@ -26,7 +26,7 @@
 		<div class="profile-image-col">
 			<br />
 			<div class="image-container">
-				<img src="img/profile.jpg" alt="" />
+				<img src="img/profile_2.jpg" alt="" />
 			</div>
 		</div>
 	</div>
