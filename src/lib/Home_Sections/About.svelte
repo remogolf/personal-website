@@ -7,6 +7,8 @@
 			</p>
 			<br />
 			<ul>
+				<li>OnShape</li>
+				<li>SolidWorks</li>
 				<li>Siemens NX</li>
 				<li>CATIA V5</li>
 				<li>FUSION 360</li>

@@ -8,7 +8,7 @@
 		Remo Füeg
 	</h1>
 	<Typewriter cursor="white" interval={[50, 60, 80]}>
-		<p>Mechanical Engineer | Enthusiast Coder</p>
+		<p>Mechanical Engineer</p>
 	</Typewriter>
 	<a class="button" href="mailto:remogolf@gmail.com">Get In Touch</a>
 </div>

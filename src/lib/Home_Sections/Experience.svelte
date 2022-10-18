@@ -1,6 +1,6 @@
 <script>
- let experiences = ['Burckhardt Compression', '...'];
- let activeExperience = 'Burckhardt Compression';
+ let experiences = ['Burckhardt Compression', 'Fotokite'];
+ let activeExperience = 'Fotokite';
 
 </script>
 
@@ -17,6 +17,7 @@
         {/each}
     </ul>
 </div>
+
 <div class="workplaceDescription">
     <h3>Intern <span>@BCAG</span></h3>
     <p class="date">August 2019 - August 2020</p>
@@ -32,7 +33,21 @@
         </li>
     </ul>
 </div>
-</div>
+
+<div class="workplaceDescription">
+    <h3>Field Application Engineer <span>@Fotokite</span></h3>
+    <p class="date">December 2022 - now</p>
+    <ul class="taskList">
+        <li class="taskItem">
+            Customer Support
+        </li>
+        <li class="taskItem">
+            Hardware and Testing Support
+        </li>
+        <li class="taskItem">
+            CAD 3D printing
+        </li>
+    </ul>
 </div>
 
 <style>
