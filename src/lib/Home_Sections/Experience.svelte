@@ -20,7 +20,7 @@
     </div>
     {#if activeExperience === 'Burckhardt Compression'}
     <div class="workplaceDescription">
-        <h3>Intern <span>@BCAG</span></h3>
+        <h3>Intern <span><a href="https://www.burckhardtcompression.com/" target="_blank" rel="noopener noreferrer">@BCAG</a></span></h3>
         <p class="date">August 2019 - August 2020</p>
         <ul class="taskList">
             <li class="taskItem">
@@ -36,7 +36,7 @@
     </div>
     {:else}
     <div class="workplaceDescription">
-        <h3>Field Application Engineer <span>@Fotokite</span></h3>
+        <h3>Field Application Engineer <span><a href="https://fotokite.com/" target="_blank" rel="noopener noreferrer">@Fotokite</a></span></h3>
         <p class="date">December 2022 - now</p>
         <ul class="taskList">
             <li class="taskItem">
