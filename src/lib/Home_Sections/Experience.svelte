@@ -5,9 +5,9 @@
 </script>
 
 
-<div class="container" on:tabChange={tabChange}>
+<div class="container">
     <h2>Work Experience</h2>
-    <div class="workplaceBlock">
+    <div class="grid-container">
         <div class="workplaceList">
             <ul class="companyList">
             {#each experiences as experience}
@@ -18,44 +18,45 @@
             </ul>
         </div>
     </div>
+    {#if activeExperience === 'Burckhardt Compression'}
+    <div class="workplaceDescription">
+        <h3>Intern <span>@BCAG</span></h3>
+        <p class="date">August 2019 - August 2020</p>
+        <ul class="taskList">
+            <li class="taskItem">
+                Created and maintained CAD drawings using Siemens NX
+            </li>
+            <li class="taskItem">
+                Involved in Subprojects for Compressor Auxiliary parts such as Lubrication Units and Coolant pipping
+            </li>
+            <li class="taskItem">
+                Updating Companies Material properties list
+            </li>
+        </ul>
+    </div>
+    {:else}
+    <div class="workplaceDescription">
+        <h3>Field Application Engineer <span>@Fotokite</span></h3>
+        <p class="date">December 2022 - now</p>
+        <ul class="taskList">
+            <li class="taskItem">
+                Customer Tech Support
+            </li>
+            <li class="taskItem">
+                Hardware and Testing Support
+            </li>
+            <li class="taskItem">
+                CAD & 3D printing
+            </li>
+            <li class="taskItem">
+                Create Support Structure and Documentation
+            </li>
+        </ul>
+    </div>
+    {/if}
 </div>
 
-{#if activeExperience === 'Burckhardt Compression'}
-<div class="workplaceDescription">
-    <h3>Intern <span>@BCAG</span></h3>
-    <p class="date">August 2019 - August 2020</p>
-    <ul class="taskList">
-        <li class="taskItem">
-            Created and maintained CAD drawings using Siemens NX
-        </li>
-        <li class="taskItem">
-            Involved in Subprojects for Compressor Auxiliary parts such as Lubrication Units and Coolant pipping
-        </li>
-        <li class="taskItem">
-            Updating Companies Material properties list
-        </li>
-    </ul>
-</div>
-{:else}
-<div class="workplaceDescription">
-    <h3>Field Application Engineer <span>@Fotokite</span></h3>
-    <p class="date">December 2022 - now</p>
-    <ul class="taskList">
-        <li class="taskItem">
-            Customer Tech Support
-        </li>
-        <li class="taskItem">
-            Hardware and Testing Support
-        </li>
-        <li class="taskItem">
-            CAD & 3D printing
-        </li>
-        <li class="taskItem">
-            Create Support Structure and Documentation
-        </li>
-    </ul>
-</div>
-{/if}
+
 
 
 <style>
@@ -66,18 +67,8 @@
     }
     .companyList{
         display: flex;
-        flex-direction: column;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-    .workplaceBlock {
-        width: 100%;
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 10ch 1fr;
-        grid-template-areas: 'workList workDescription';
+        flex-direction: row;
+        padding: 0rem 0 1rem 0rem;
     }
     .workplaceList {
         grid-area: workList;
@@ -109,12 +100,13 @@
     }
     ul {
         list-style-type: none;
-    }
+        }
     span {
         color: var(--primary);
     }
     li {
         cursor:pointer;
+        padding: 0 1rem 0 0;
     }
 
     @media (max-width: 650px) {
@@ -127,7 +119,7 @@
         li {
             padding-right: 0.5rem;
         }
-		.workplaceBlock {
+		.grid-container {
 			grid-template-columns: 1fr;
             grid-template-rows: 3rem 1fr;
             grid-template-areas: 
