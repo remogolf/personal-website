@@ -5,19 +5,22 @@
 </script>
 
 
-<div class="container">
+<div class="container" on:tabChange={tabChange}>
     <h2>Work Experience</h2>
     <div class="workplaceBlock">
-    <div class="workplaceList">
-    <ul class="companyList">
-        {#each experiences as experience}
-        <li>
-            <div class="companyItem" class:active={experience === activeExperience}>{experience}</div>
-        </li>
-        {/each}
-    </ul>
+        <div class="workplaceList">
+            <ul class="companyList">
+            {#each experiences as experience}
+            <li on:click={() => activeExperience = experience}>
+                <div class="companyItem" class:active={experience === activeExperience}>{experience}</div>
+            </li>
+            {/each}
+            </ul>
+        </div>
+    </div>
 </div>
 
+{#if activeExperience === 'Burckhardt Compression'}
 <div class="workplaceDescription">
     <h3>Intern <span>@BCAG</span></h3>
     <p class="date">August 2019 - August 2020</p>
@@ -33,22 +36,27 @@
         </li>
     </ul>
 </div>
-
+{:else}
 <div class="workplaceDescription">
     <h3>Field Application Engineer <span>@Fotokite</span></h3>
     <p class="date">December 2022 - now</p>
     <ul class="taskList">
         <li class="taskItem">
-            Customer Support
+            Customer Tech Support
         </li>
         <li class="taskItem">
             Hardware and Testing Support
         </li>
         <li class="taskItem">
-            CAD 3D printing
+            CAD & 3D printing
+        </li>
+        <li class="taskItem">
+            Create Support Structure and Documentation
         </li>
     </ul>
 </div>
+{/if}
+
 
 <style>
     .active {
@@ -104,6 +112,9 @@
     }
     span {
         color: var(--primary);
+    }
+    li {
+        cursor:pointer;
     }
 
     @media (max-width: 650px) {
